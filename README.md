@@ -6,4 +6,4 @@ Both packages are built upon the thought of strictness. Strictness helps to unif
 
 This set of rules can be interpreted as too strict by some users, but learning to follow them will pay off. 
 
-I use this set of rules on every one of my projects, as it is a base rule set in the purple_starter. It is battle-tested and proven to enforce a maintainable code style. Enjoy!
+I use this set of rules on every one of my projects, as it is a base rule set in the [purple_starter](https://github.com/purplenoodlesoop/purple-starter). It is battle-tested and proven to enforce a maintainable code style. Enjoy!
