@@ -1,4 +1,4 @@
-include: package:purple_lints/analysis_options.yaml
+include: package:purple_lints/purple_lints.yaml
 
 analyzer:
   plugins:
