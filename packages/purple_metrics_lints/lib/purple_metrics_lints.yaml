@@ -67,6 +67,7 @@ dart_code_metrics:
         max-identifier-length: 30
         min-identifier-length: 3
     - prefer-first
+    - prefer-immediate-return
     - prefer-last
     - always-remove-listener # experimental
     - avoid-border-all
