@@ -2,7 +2,7 @@ include: package:purple_lints/purple_lints.yaml
 
 analyzer:
   plugins:
-    - dart-code-metrics
+    - dart_code_metrics
 
 dart_code_metrics:
   metrics:
