@@ -99,7 +99,6 @@ linter:
 
     # Style Rules
     - always_declare_return_types
-    - always_put_control_body_on_new_line
     - annotate_overrides
     - avoid_bool_literals_in_conditional_expressions
     - avoid_catches_without_on_clauses
