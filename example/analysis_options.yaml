@@ -1,1 +1,1 @@
-include: package:purple_lints/purple_lints.yaml
+include: package:purple_metrics_lints/purple_metrics_lints.yaml
