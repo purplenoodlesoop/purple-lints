@@ -1,3 +1,9 @@
+## [0.3.0] – 2022-05-21
+
+### Removed
+- `avoid-ignoring-return-values` rule
+- `member-ordering-extended` rule
+
 ## 0.2.0 - [17.03.2022]
 
 ### Added
