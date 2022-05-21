@@ -34,6 +34,7 @@ analyzer:
     avoid_unused_constructor_parameters: warning
     avoid_void_async: error
     await_only_futures: warning
+    cast_nullable_to_non_nullable: warning
     conditional_uri_does_not_exist: warning
     curly_braces_in_flow_control_structures: warning
     no_leading_underscores_for_local_identifiers: warning
@@ -63,6 +64,7 @@ analyzer:
     use_full_hex_values_for_flutter_colors: warning
     use_function_type_syntax_for_parameters: warning
     use_string_buffers: warning
+    use_enums: warning
 
     # Pub Rules
     depend_on_referenced_packages: error
@@ -139,7 +141,7 @@ linter:
     - camel_case_extensions
     - camel_case_types
     - cascade_invocations
-    - cast_nullable_to_non_nullable # warning
+    - cast_nullable_to_non_nullable
     - conditional_uri_does_not_exist
     - constant_identifier_names
     - curly_braces_in_flow_control_structures
@@ -232,9 +234,9 @@ linter:
     - unnecessary_string_escapes
     - unnecessary_string_interpolations
     - unnecessary_this
-    # - use_colored_box # experimental
+    - use_colored_box
     - use_decorated_box
-    # - use_enums # experimental
+    - use_enums # experimental
     - use_full_hex_values_for_flutter_colors
     - use_function_type_syntax_for_parameters
     - use_if_null_to_convert_nulls_to_bools
@@ -242,7 +244,7 @@ linter:
     - use_named_constants
     - use_rethrow_when_possible
     - use_string_buffers
-    # - use_super_initializers # experimental
+    - use_super_parameters # experimental
     - use_test_throws_matchers
     - use_to_and_as_if_applicable
     - void_checks
