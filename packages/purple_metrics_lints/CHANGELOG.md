@@ -4,6 +4,9 @@
 - `avoid-ignoring-return-values` rule
 - `member-ordering-extended` rule
 
+### Changed
+- Bumped `purple_lints` dependency version to 0.3.0
+
 ## 0.2.0 - [17.03.2022]
 
 ### Added
