@@ -19,8 +19,6 @@ dart_code_metrics:
         severity: error
     - avoid-global-state:
         severity: error
-    - avoid-ignoring-return-values:
-        severity: style
     - avoid-missing-enum-constant-in-map:
         severity: error
     - avoid-nested-conditional-expressions
@@ -33,28 +31,6 @@ dart_code_metrics:
     - avoid-unrelated-type-assertions:
         severity: style
     - binary-expression-operand-order
-    - member-ordering-extended:
-        alphabetize: false
-        order:
-          - private-static-const-fields
-          - public-static-const-fields
-          - private-static-final-fields
-          - public-static-final-fields
-          - private-final-fields
-          - public-final-fields
-          - constructors
-          - named-constructors
-          - factory-constructors
-          - private-fields
-          - public-fields
-          - private-getters-setters
-          - public-getters-setters
-          - private-static-methods
-          - public-static-methods
-          - private-methods
-          - public-methods
-          - protected-methods
-          - overridden-methods
     - newline-before-return
     - no-boolean-literal-compare
     - no-empty-block- no-equal-arguments

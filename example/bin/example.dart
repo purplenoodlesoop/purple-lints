@@ -14,3 +14,8 @@ void triggersDartCodeMetrics(
   String too,
   String much,
 ) {}
+
+String? validateAge(int age) {
+  if (age < 18) return 'Underage';
+  if (age > 65) return 'Senior';
+}
