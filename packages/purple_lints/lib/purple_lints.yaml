@@ -3,7 +3,14 @@ analyzer:
   strong-mode:
     implicit-casts: false
     implicit-dynamic: false
+  language:
+    strict-casts: true
+    strict-inference: true
+    strict-raw-types: true
   errors:
+    # Built-in rules
+    body_might_complete_normally_nullable: ignore
+
     # Error rules
     avoid_dynamic_calls: error
     avoid_empty_else: warning
