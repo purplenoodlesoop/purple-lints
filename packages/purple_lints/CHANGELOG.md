@@ -1,3 +1,14 @@
+## [0.3.0] – 2022-05-21
+### Added
+- Language strict analyzer rules
+- New `use_enums`, `use_super_parameters`, and `use_colored_box` linter rules
+- `avoid_types_on_closure_parameters` rule
+
+### Changed
+- `cast_nullable_to_non_nullable` severity from `info` to `warning`
+- `body_might_complete_normally_nullable` severity from `info` to `ignore`
+
+
 ## 0.2.0 - [17.03.2022]
 
 ### Removed
