@@ -107,6 +107,7 @@ linter:
 
     # Style Rules
     - always_declare_return_types
+    - always_put_required_named_parameters_first
     - annotate_overrides
     - avoid_bool_literals_in_conditional_expressions
     - avoid_catches_without_on_clauses
@@ -143,6 +144,7 @@ linter:
     - cast_nullable_to_non_nullable
     - conditional_uri_does_not_exist
     - constant_identifier_names
+    - combinators_ordering
     - curly_braces_in_flow_control_structures
     - deprecated_consistency
     - directives_ordering
@@ -232,6 +234,7 @@ linter:
     - unnecessary_string_escapes
     - unnecessary_string_interpolations
     - unnecessary_this
+    - unreachable_from_main # experimental
     - use_colored_box
     - use_decorated_box
     - use_enums # experimental
@@ -242,6 +245,7 @@ linter:
     - use_named_constants
     - use_rethrow_when_possible
     - use_string_buffers
+    - use_string_in_part_of_directives
     - use_super_parameters # experimental
     - use_test_throws_matchers
     - use_to_and_as_if_applicable
