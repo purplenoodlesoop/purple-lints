@@ -23,6 +23,7 @@ analyzer:
     hash_and_equals: warning
     iterable_contains_unrelated_type: warning
     list_remove_unrelated_type: warning
+    use_build_context_synchronously: error
 
     # Style Rules
     always_declare_return_types: error
@@ -46,7 +47,6 @@ analyzer:
     prefer_const_constructors_in_immutables: warning
     prefer_const_declarations: warning
     prefer_const_literals_to_create_immutables: warning
-    prefer_expression_function_bodies: warning
     prefer_final_fields: error
     prefer_final_in_for_each: error
     prefer_final_locals: error
@@ -89,7 +89,6 @@ linter:
     - control_flow_in_finally
     - empty_statements
     - hash_and_equals
-    - invariant_booleans # experimental
     - iterable_contains_unrelated_type
     - list_remove_unrelated_type
     - literal_only_boolean_expressions
@@ -108,6 +107,7 @@ linter:
 
     # Style Rules
     - always_declare_return_types
+    - always_put_required_named_parameters_first
     - annotate_overrides
     - avoid_bool_literals_in_conditional_expressions
     - avoid_catches_without_on_clauses
@@ -144,6 +144,7 @@ linter:
     - cast_nullable_to_non_nullable
     - conditional_uri_does_not_exist
     - constant_identifier_names
+    - combinators_ordering
     - curly_braces_in_flow_control_structures
     - deprecated_consistency
     - directives_ordering
@@ -183,7 +184,6 @@ linter:
     - prefer_constructors_over_static_methods
     - prefer_contains
     - prefer_equal_for_default_values
-    - prefer_expression_function_bodies
     - prefer_final_fields
     - prefer_final_in_for_each
     - prefer_final_locals
@@ -234,6 +234,7 @@ linter:
     - unnecessary_string_escapes
     - unnecessary_string_interpolations
     - unnecessary_this
+    - unreachable_from_main # experimental
     - use_colored_box
     - use_decorated_box
     - use_enums # experimental
@@ -244,6 +245,7 @@ linter:
     - use_named_constants
     - use_rethrow_when_possible
     - use_string_buffers
+    - use_string_in_part_of_directives
     - use_super_parameters # experimental
     - use_test_throws_matchers
     - use_to_and_as_if_applicable
