@@ -1,7 +1,14 @@
+## [0.5.0] – 2023-02-04
+### Added
+- New rules from current release of DCM
+
+### Changed
+- Bumped `dart_code_metrics` dependency version to `^5.5.1`
+
 ## [0.4.0] – 2022-10-10
+
 ### Changed
 - Bumped `purple_lints` dependency version to 0.4.0
-
 
 ## [0.3.0] – 2022-05-21
 
