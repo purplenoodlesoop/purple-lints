@@ -39,7 +39,7 @@ dart_code_metrics:
     - no-object-declaration
     - prefer-conditional-expressions
     - prefer-correct-identifier-length:
-        exceptions: ['id']
+        exceptions: ['id', 'to', 'of']
         max-identifier-length: 30
         min-identifier-length: 3
     - prefer-first
@@ -56,6 +56,28 @@ dart_code_metrics:
         ignore-private-widgets: true
     - prefer-intl-name
     - provide-correct-intl-args
+    - prefer-moving-to-variable
+    - prefer-commenting-analyzer-ignores
+    - avoid-non-ascii-symbols
+    - format-comment
+    - avoid-expanded-as-spacer
+    - avoid-duplicate-exports
+    - avoid-shrink-wrap-in-lists
+    - avoid-top-level-members-in-tests
+    - prefer-correct-edge-insets-constructor
+    - prefer-enums-by-name
+    - avoid-passing-async-when-sync-expected
+    - check-for-equals-in-render-object-setters
+    - consistent-update-render-object
+    - avoid-redundant-async
+    - prefer-correct-test-file-name
+    - prefer-iterable-of
+    - missing-test-assertion
+    - avoid-cascade-after-if-null
+    - avoid-double-slash-imports
+    - prefer-using-list-view
+    - avoid-unnecessary-conditionals
+    - use-setstate-synchronously
   rules-exclude:
     - test/**
   anti-patterns:
