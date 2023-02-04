@@ -1,11 +1,11 @@
 name: purple_metrics_lints
 description: List of strict linter rules that can be used both in Dart and Flutter projects to enforce a highly maintainable style that includes additional Dart Code Metric integration.
 repository: https://github.com/purplenoodlesoop/purple_lints/tree/master/packages/purple_metrics_lints
-version: 0.4.0
+version: 0.5.0
 
 environment:
   sdk: '>=2.12.0 <3.0.0'
 
 dependencies:
-  dart_code_metrics: ^4.13.0
+  dart_code_metrics: ^5.5.1
   purple_lints: ^0.4.0
