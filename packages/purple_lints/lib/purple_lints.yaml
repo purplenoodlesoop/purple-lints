@@ -24,13 +24,13 @@ analyzer:
     iterable_contains_unrelated_type: warning
     list_remove_unrelated_type: warning
     use_build_context_synchronously: error
+    collection_methods_unrelated_type: error
 
     # Style Rules
     always_declare_return_types: error
     always_put_control_body_on_new_line: warning
     avoid_equals_and_hash_code_on_mutable_classes: error
     avoid_field_initializers_in_const_classes: warning
-    avoid_function_literals_in_foreach_calls: warning
     avoid_returning_this: warning
     avoid_unused_constructor_parameters: warning
     avoid_void_async: error
@@ -59,6 +59,7 @@ analyzer:
     tighten_type_of_initializing_formals: warning
     type_annotate_public_apis: error
     unawaited_futures: warning
+    always_use_package_imports: warning
     unnecessary_await_in_return: warning
     unnecessary_this: warning
     use_full_hex_values_for_flutter_colors: warning
@@ -80,15 +81,23 @@ linter:
     - avoid_print
     - avoid_returning_null_for_future
     - avoid_slow_async_io
+    - collection_methods_unrelated_type
     - avoid_type_to_string
+    - unintended_html_in_doc_comment
+    - unnecessary_async
     - avoid_types_as_parameter_names
     - avoid_web_libraries_in_flutter
     - cancel_subscriptions
     - close_sinks
     - comment_references
+    - no_runtimeType_toString
+    - no_self_assignments
+    - no_wildcard_variable_uses
     - control_flow_in_finally
     - empty_statements
     - hash_and_equals
+    - prefer_if_elements_to_conditional_expressions
+    - no_literal_bool_comparisons
     - iterable_contains_unrelated_type
     - list_remove_unrelated_type
     - literal_only_boolean_expressions
@@ -98,9 +107,13 @@ linter:
     - prefer_void_to_null
     - test_types_in_equals
     - throw_in_finally
+    - missing_code_block_language_in_doc_comment
+    - matching_super_parameters
     - unnecessary_statements
+    - unsafe_variance
     - unrelated_type_equality_checks
     - unsafe_html
+    - use_late_for_private_fields_and_variables
     - use_build_context_synchronously # experimental
     - use_key_in_widget_constructors
     - valid_regexps
@@ -109,6 +122,8 @@ linter:
     - always_declare_return_types
     - always_put_required_named_parameters_first
     - annotate_overrides
+    - annotate_redeclares
+    - avoid_annotating_with_dynamic
     - avoid_bool_literals_in_conditional_expressions
     - avoid_catches_without_on_clauses
     - avoid_catching_errors
@@ -117,7 +132,6 @@ linter:
     - avoid_equals_and_hash_code_on_mutable_classes
     - avoid_escaping_inner_quotes
     - avoid_field_initializers_in_const_classes
-    - avoid_function_literals_in_foreach_calls
     - avoid_implementing_value_types
     - avoid_init_to_null
     - avoid_js_rounded_ints
@@ -132,33 +146,43 @@ linter:
     - avoid_returning_this
     - avoid_setters_without_getters
     - avoid_shadowing_type_parameters
-    - avoid_single_cascade_in_expression_statements
     - avoid_types_on_closure_parameters
     - avoid_unnecessary_containers
     - avoid_unused_constructor_parameters
     - avoid_void_async
     - await_only_futures
     - camel_case_extensions
+    - discarded_futures
+    - dangling_library_doc_comments
     - camel_case_types
     - cascade_invocations
     - cast_nullable_to_non_nullable
     - conditional_uri_does_not_exist
     - constant_identifier_names
+    - deprecated_member_use_from_same_package
     - combinators_ordering
     - curly_braces_in_flow_control_structures
     - deprecated_consistency
+    - implicit_call_tearoffs
+    - library_annotations
+    - implicit_reopen
     - directives_ordering
+    - invalid_case_patterns
+    - invalid_runtime_check_with_js_interop_types
     - empty_catches
     - empty_constructor_bodies
     - eol_at_end_of_file
     - exhaustive_cases
     - file_names
+    - flutter_style_todos
     - implementation_imports
     - join_return_with_assignment
     - leading_newlines_in_multiline_strings
     - library_names
     - library_prefixes
     - library_private_types_in_public_api
+    - omit_obvious_local_variable_types
+    - omit_obvious_property_types
     - lines_longer_than_80_chars
     - missing_whitespace_between_adjacent_strings
     - no_default_cases # experimental
@@ -196,6 +220,7 @@ linter:
     - prefer_inlined_adds
     - prefer_int_literals
     - prefer_is_empty
+    - prefer_mixin
     - prefer_is_not_empty
     - prefer_is_not_operator
     - prefer_iterable_whereType
@@ -206,7 +231,6 @@ linter:
     - prefer_typing_uninitialized_variables
     - provide_deprecation_message
     - recursive_getters
-    - require_trailing_commas # experimental
     - sized_box_for_whitespace
     - sized_box_shrink_expand
     - slash_for_doc_comments
@@ -216,6 +240,12 @@ linter:
     - type_annotate_public_apis
     - type_init_formals
     - unawaited_futures
+    - unnecessary_breaks
+    - unnecessary_library_directive
+    - unnecessary_library_name
+    - type_literal_in_constant_pattern
+    - unnecessary_ignore
+    - unnecessary_null_aware_operator_on_extension_on_nullable
     - unnecessary_await_in_return
     - unnecessary_brace_in_string_interps
     - unnecessary_const
@@ -229,6 +259,8 @@ linter:
     - unnecessary_null_in_if_null_operators
     - unnecessary_nullable_for_final_variable_declarations # experimental
     - unnecessary_overrides
+    - unnecessary_to_list_in_spreads
+    - unnecessary_underscores
     - unnecessary_parenthesis
     - unnecessary_raw_strings
     - unnecessary_string_escapes
@@ -241,6 +273,7 @@ linter:
     - use_full_hex_values_for_flutter_colors
     - use_function_type_syntax_for_parameters
     - use_if_null_to_convert_nulls_to_bools
+    - use_raw_strings
     - use_is_even_rather_than_modulo
     - use_named_constants
     - use_rethrow_when_possible
@@ -248,7 +281,9 @@ linter:
     - use_string_in_part_of_directives
     - use_super_parameters # experimental
     - use_test_throws_matchers
+    - package_prefixed_library_names
     - use_to_and_as_if_applicable
+    - use_truncating_division
     - void_checks
 
     # Pub Rules

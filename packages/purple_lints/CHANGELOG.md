@@ -1,3 +1,7 @@
+## [0.5.0] – 2025-03-10
+### Added
+- Latest linter rules
+
 ## [0.4.0] – 2022-10-10
 ### Added
 - `always_put_required_named_parameters_first`, `combinators_ordering`, `unreachable_from_main` and `use_string_in_part_of_directives` rules
